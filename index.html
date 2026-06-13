@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tania Pogue</title>
 
 <style>
@@ -39,6 +41,13 @@
         font-weight: 300;
     }
 
+    .research-strip {
+        text-align: center;
+        color: #444;
+        margin-top: 12px;
+        font-size: 0.95em;
+    }
+
     .container {
         padding: 30px 20px;
     }
@@ -62,7 +71,7 @@
     }
 
     li {
-        margin-bottom: 8px;
+        margin-bottom: 14px;
     }
 
     .card {
@@ -71,6 +80,11 @@
         border-radius: 12px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         margin-top: 10px;
+        transition: 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-2px);
     }
 
     a {
@@ -82,7 +96,6 @@
         text-decoration: underline;
     }
 
-    /* KEY FIGURE BOX */
     .figure {
         text-align: center;
     }
@@ -117,6 +130,10 @@
     </div>
 </div>
 
+<div class="research-strip">
+    Thermal performance • Microclimates • Invasion ecology
+</div>
+
 <div class="container">
 
     <p><strong>PhD Zoology Candidate</strong> – Stellenbosch University, South Africa</p>
@@ -147,11 +164,10 @@
             I also investigate physiological responses to thermal extremes, including damage accumulation, repair processes, and antioxidant protection during simulated heatwaves.
         </p>
 
-        <!-- KEY FIGURE -->
         <div class="figure">
             <img src="tpc_preview.png" alt="Thermal Performance Curve Preview">
             <div class="caption">
-                <em>Figure:</em> Example thermal performance curve (TPC) showing trait performance across temperature. Replace with your actual model output or ggplot export.
+                Example thermal performance curve (TPC). Replace with your actual model output from R.
             </div>
         </div>
     </div>
@@ -163,7 +179,7 @@
         </p>
 
         <p>
-            More broadly, I aim to extend this framework beyond a single species to better understand how fine-scale thermal heterogeneity influences ectotherm performance, range limits, and invasion success under climate change.
+            More broadly, I aim to extend this framework to better understand how fine-scale thermal heterogeneity influences ectotherm performance and invasion success under climate change.
         </p>
 
         <p>
@@ -174,11 +190,29 @@
     <h2>Publications</h2>
     <div class="card">
         <ul>
-            <li><strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2025). Effects of semiochemical pre-feeding, physiological state, and weather on the response of <em>Bactrocera dorsalis</em> to methyl eugenol baited traps. <em>Crop Protection</em>, 107015.</li>
+            <li>
+                <strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2025).
+                Effects of semiochemical pre-feeding, physiological state, and weather on the response of <em>Bactrocera dorsalis</em> to methyl eugenol baited traps.
+                <em>Crop Protection</em>, 107015.
+                <br>
+                <a href="https://doi.org/10.1016/j.cropro.2024.107015" target="_blank">DOI</a>
+            </li>
 
-            <li><strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2024). Effects of physiological status and environmental factors on lure responses of three fruit fly species. <em>Journal of Chemical Ecology</em>, 1–22.</li>
+            <li>
+                <strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2024).
+                Effects of physiological status and environmental factors on lure responses of three fruit fly species.
+                <em>Journal of Chemical Ecology</em>, 1–22.
+                <br>
+                <a href="https://doi.org/10.1007/s10886-024-01516-8" target="_blank">DOI</a>
+            </li>
 
-            <li><strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2022). Patterns of remating behaviour in <em>Ceratitis</em> species. <em>Frontiers in Physiology</em>, 824768.</li>
+            <li>
+                <strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2022).
+                Patterns of remating behaviour in <em>Ceratitis</em> species.
+                <em>Frontiers in Physiology</em>, 824768.
+                <br>
+                <a href="https://doi.org/10.3389/fphys.2022.824768" target="_blank">DOI</a>
+            </li>
         </ul>
     </div>
 
@@ -187,7 +221,7 @@
         <p><strong>Email:</strong> <a href="mailto:tpogue@sun.ac.za">tpogue@sun.ac.za</a></p>
         <p><strong>Alternate:</strong> <a href="mailto:tania.pogue@gmail.com">tania.pogue@gmail.com</a></p>
         <p><strong>Institution:</strong> Stellenbosch University</p>
-        <p><strong>ORCID:</strong> 0000-0002-7645-7109</p>
+        <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7645-7109">0000-0002-7645-7109</a></p>
         <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=2Ti5-OoAAAAJ&hl=en&oi=sra" target="_blank">View profile</a></p>
         <p><strong>Lab:</strong> <a href="https://climelab.net/" target="_blank">Climate Lab</a></p>
     </div>
