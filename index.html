@@ -1,41 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tania Pogue</title>
+<meta charset="UTF-8">
+<title>Tania Pogue</title>
+
+<style>
+    body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        max-width: 850px;
+        margin: auto;
+        padding: 0;
+        line-height: 1.6;
+        color: #222;
+        background: #fafafa;
+    }
+
+    /* TOP BANNER */
+    .banner {
+        background: linear-gradient(90deg, #2f3b52, #3f6aa8);
+        color: white;
+        padding: 25px 20px;
+    }
+
+    .banner-content {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.3em;
+    }
+
+    .tagline {
+        margin-top: 5px;
+        font-size: 1.05em;
+        opacity: 0.9;
+        font-weight: 300;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        margin-top: 35px;
+        color: #2f3b52;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 5px;
+    }
+
+    img {
+        width: 180px;
+        border-radius: 12px;
+        margin-top: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .card {
+        background: white;
+        padding: 18px 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-top: 10px;
+    }
+
+    a {
+        color: #2b6cb0;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* KEY FIGURE BOX */
+    .figure {
+        text-align: center;
+    }
+
+    .figure img {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 10px;
+    }
+
+    .caption {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 8px;
+    }
+
+    .contact p {
+        margin: 5px 0;
+    }
+</style>
 </head>
 
-<body style="font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6;">
+<body>
 
-    <h1>Tania Pogue</h1>
+<!-- TOP BANNER -->
+<div class="banner">
+    <div class="banner-content">
+        <h1>Tania Pogue</h1>
+        <div class="tagline">
+            Thermal ecology • Invasive species • Linking microclimates to organismal performance
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
     <p><strong>PhD Zoology Candidate</strong> – Stellenbosch University, South Africa</p>
 
-    <img src="yourphoto.jpg" width="200" style="border-radius: 10px;">
+    <img src="yourphoto.jpg" alt="Tania Pogue">
 
     <h2>About Me</h2>
-    <p>
-        I am a PhD Zoology candidate with a research background in insect eco-physiology, spanning both applied pest management and fundamental thermal biology. My work focuses on how insects interact with their environment, 
-        with particular emphasis on the physiological mechanisms underlying thermal responses and their implications under climate change. I have experience in experimental design, insect rearing, physiological assays, and 
-        statistical analysis in R. I am also engaged in science communication across academic and public audiences, with a focus on accessibility and impact.
-    </p>
+    <div class="card">
+        <p>
+            I am a PhD Zoology candidate with a research background in insect eco-physiology, spanning both applied pest management and fundamental thermal biology. My work focuses on how insects interact with their environment, with particular emphasis on physiological responses to temperature and their implications under climate change.
+        </p>
+        <p>
+            I have experience in experimental design, insect rearing, physiological assays, and statistical analysis in R, and I am engaged in science communication across academic and public audiences.
+        </p>
+    </div>
 
     <h2>Current Research</h2>
-    <ul>
-        <li>Thermal performance of invasive insects</li>
-        <li>Temperature effects on life-history traits</li>
-        <li>Climate change biology in insects</li>
-    </ul>
+    <div class="card">
+        <p>
+            My research focuses on how temperature shapes the performance and invasion success of the invasive harlequin ladybeetle (<em>Harmonia axyridis</em>). I combine laboratory experiments with long-term field microclimate data collected around Stellenbosch to understand how insects experience thermal environments in nature.
+        </p>
+
+        <p>
+            A key component of this work is comparing thermal performance across multiple traits and integrating laboratory-derived thermal performance curves with fine-scale microclimate data to estimate realised performance under natural conditions.
+        </p>
+
+        <p>
+            I also investigate physiological responses to thermal extremes, including damage accumulation, repair processes, and antioxidant protection during simulated heatwaves.
+        </p>
+
+        <!-- KEY FIGURE -->
+        <div class="figure">
+            <img src="tpc_preview.png" alt="Thermal Performance Curve Preview">
+            <div class="caption">
+                <em>Figure:</em> Example thermal performance curve (TPC) showing trait performance across temperature. Replace with your actual model output or ggplot export.
+            </div>
+        </div>
+    </div>
 
     <h2>Future Research</h2>
-    <ul>
-        <li>Climate change impacts on species interactions</li>
-        <li>Expanding thermal biology experiments</li>
-    </ul>
+    <div class="card">
+        <p>
+            In the next phase, I will finalise analyses and develop all chapters into publication-ready manuscripts, with a focus on integrating microclimate variation into thermal performance models.
+        </p>
+
+        <p>
+            More broadly, I aim to extend this framework beyond a single species to better understand how fine-scale thermal heterogeneity influences ectotherm performance, range limits, and invasion success under climate change.
+        </p>
+
+        <p>
+            Ultimately, this work bridges laboratory-based thermal physiology and real-world environmental conditions to improve ecological prediction and invasion risk assessment.
+        </p>
+    </div>
+
+    <h2>Publications</h2>
+    <div class="card">
+        <ul>
+            <li><strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2025). Effects of semiochemical pre-feeding, physiological state, and weather on the response of <em>Bactrocera dorsalis</em> to methyl eugenol baited traps. <em>Crop Protection</em>, 107015.</li>
+
+            <li><strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2024). Effects of physiological status and environmental factors on lure responses of three fruit fly species. <em>Journal of Chemical Ecology</em>, 1–22.</li>
+
+            <li><strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2022). Patterns of remating behaviour in <em>Ceratitis</em> species. <em>Frontiers in Physiology</em>, 824768.</li>
+        </ul>
+    </div>
 
     <h2>Contact</h2>
-    <p>Email:           tpogue@sun.ac.za</p>
-    <p>Alternat email:  tania.pogue@gmail.com</p>
-    <p>ORCID:           0000-0002-7645-7109</p>
+    <div class="card contact">
+        <p><strong>Email:</strong> <a href="mailto:tpogue@sun.ac.za">tpogue@sun.ac.za</a></p>
+        <p><strong>Alternate:</strong> <a href="mailto:tania.pogue@gmail.com">tania.pogue@gmail.com</a></p>
+        <p><strong>Institution:</strong> Stellenbosch University</p>
+        <p><strong>ORCID:</strong> 0000-0002-7645-7109</p>
+        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=2Ti5-OoAAAAJ&hl=en&oi=sra" target="_blank">View profile</a></p>
+        <p><strong>Lab:</strong> <a href="https://climelab.net/" target="_blank">Climate Lab</a></p>
+    </div>
+
+</div>
 
 </body>
 </html>
