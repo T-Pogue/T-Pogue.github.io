@@ -17,7 +17,6 @@
         background: #fafafa;
     }
 
-    /* TOP BANNER */
     .banner {
         background: linear-gradient(90deg, #2f3b52, #3f6aa8);
         color: white;
@@ -41,13 +40,6 @@
         font-weight: 300;
     }
 
-    .research-strip {
-        text-align: center;
-        color: #444;
-        margin-top: 12px;
-        font-size: 0.95em;
-    }
-
     .container {
         padding: 30px 20px;
     }
@@ -59,41 +51,24 @@
         padding-bottom: 5px;
     }
 
-    img {
-        width: 180px;
-        border-radius: 12px;
-        margin-top: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 14px;
-    }
-
     .card {
         background: white;
         padding: 18px 20px;
         border-radius: 12px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         margin-top: 10px;
-        transition: 0.2s ease;
     }
 
-    .card:hover {
-        transform: translateY(-2px);
+    .highlight-card {
+        background: #eef4ff;
+        border-left: 5px solid #3f6aa8;
     }
 
-    a {
-        color: #2b6cb0;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
+    img {
+        width: 180px;
+        border-radius: 12px;
+        margin-top: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     .figure {
@@ -112,9 +87,28 @@
         margin-top: 8px;
     }
 
-    .contact p {
-        margin: 5px 0;
+    ul {
+        padding-left: 20px;
     }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #2b6cb0;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .small-note {
+        font-size: 0.95em;
+        color: #555;
+    }
+
 </style>
 </head>
 
@@ -125,7 +119,7 @@
     <div class="banner-content">
         <h1>Tania Pogue</h1>
         <div class="tagline">
-            Thermal ecology • Invasive species • Linking microclimates to organismal performance
+            Eco-Physiology • Thermal ecology • Applied entomology • Linking microclimates to organismal performance
         </div>
     </div>
 </div>
@@ -134,22 +128,62 @@
 
     <p><strong>PhD Zoology Candidate</strong> – Stellenbosch University, South Africa</p>
 
-    <img src="photo.jpg" alt="Tania Pogue">
+    <img src="yourphoto.jpg" alt="Tania Pogue">
 
-    <h2>About Me</h2>
-    <div class="card">
+    <!-- ========================= -->
+    <!-- POSTER SUMMARY (NEW TOP PRIORITY SECTION) -->
+    <!-- ========================= -->
+    <h2>Research Overview (SEB Poster Summary)</h2>
+    <div class="card highlight-card">
         <p>
-            I am a PhD Zoology candidate with a research background in insect eco-physiology, spanning both applied pest management and fundamental thermal biology. My work focuses on how insects interact with their environment, with particular emphasis on physiological responses to temperature and their implications under climate change.
+            This research investigates how temperature shapes the performance, physiology, and population persistence of the harlequin ladybeetle 
+            (<em>Harmonia axyridis</em>) by integrating laboratory thermal performance experiments with fine-scale environmental microclimate data.
         </p>
-        <p>
-            I have experience in experimental design, insect rearing, physiological assays, and statistical analysis in R, and I am engaged in science communication across academic and public audiences.
+
+        <p class="small-note">
+            The aim is to link organismal thermal physiology with real-world environmental conditions to improve predictions of species responses to climate variability and extreme heat events, such as heatwaves.
         </p>
     </div>
 
-    <h2>Current Research</h2>
+    <!-- ========================= -->
+    <!-- KEY FINDINGS (NEW CRITICAL SECTION) -->
+    <!-- ========================= -->
+    <h2>Key Findings</h2>
+    <div class="card">
+        <ul>
+            <li>Thermal performance differs substantially across traits (e.g. locomotion vs reproduction).</li>
+            <li>Reproductive traits show a broader thermal tolerance than locomotary or metabolic performance.</li>
+            <li>Exposure to high temperatures reduces reproductive output and physiological performance.</li>
+            <li>Microclimate variation strongly alters predicted realised performance in natural conditions.</li>
+        </ul>
+    </div>
+
+    <!-- ========================= -->
+    <!-- POSTER / DATA ACCESS -->
+    <!-- ========================= -->
+    <h2>Poster & Research Resources</h2>
+    <div class="card">
+        <ul>
+            <li><a href="YOUR_POSTER_PDF_LINK" target="_blank">Download conference poster (PDF)</a></li>
+            <li><a href="https://github.com/t-pogue" target="_blank">GitHub: code & analysis pipeline</a></li>
+        </ul>
+
+        <p class="small-note">
+            Note: The code & analysis pipeline will become available on GitHub closer to publishing this work. 
+            This will include R scripts for thermal performance curve fitting, microclimate integration, and model outputs. 
+            In the meantime, if you have any queries or interest in the code or analysis, please get in touch with me (see details below).
+        </p>
+    </div>
+
+    <!-- ========================= -->
+    <!-- CURRENT RESEARCH -->
+    <!-- ========================= -->
+    <h2>Current Research (Details)</h2>
     <div class="card">
         <p>
-            My research focuses on how temperature shapes the performance and invasion success of the invasive harlequin ladybeetle (<em>Harmonia axyridis</em>). I combine laboratory experiments with long-term field microclimate data collected around Stellenbosch to understand how insects experience thermal environments in nature.
+            My research focuses on how temperature shapes the performance and climate vulnerability of the invasive harlequin ladybeetle 
+            (<em>Harmonia axyridis</em>). I combine laboratory experiments with long-term field microclimate data collected around Stellenbosch 
+            to understand how insects experience thermal environments in nature.
         </p>
 
         <p>
@@ -163,62 +197,71 @@
         <div class="figure">
             <img src="tpc_preview.png" alt="Thermal Performance Curve Preview">
             <div class="caption">
-                Preliminary results: Inter-trait variation in thermal performance curves (TPCs) in Harmonia axyridis.
+                Example thermal performance curve (TPC) from R modelling.
             </div>
         </div>
     </div>
 
+    <!-- ========================= -->
+    <!-- FUTURE RESEARCH -->
+    <!-- ========================= -->
     <h2>Future Research</h2>
     <div class="card">
         <p>
-            In the next phase, I will finalise analyses and develop all chapters into publication-ready manuscripts, with a focus on integrating microclimate variation into thermal performance models.
-        </p>
-
-        <p>
-            More broadly, I aim to extend this framework to better understand how fine-scale thermal heterogeneity influences ectotherm performance and invasion success under climate change.
-        </p>
-
-        <p>
-            Ultimately, this work bridges laboratory-based thermal physiology and real-world environmental conditions to improve ecological prediction and invasion risk assessment.
+            I aim to develop integrated thermal ecology models that combine laboratory physiology with fine-scale environmental heterogeneity 
+            to improve predictions of species responses to climate change.
+            I also aim to develop models that elucidate the effects of fine-scale microclimate buffering effects on the thermal performance of insects in natural conditions.
+            Finally, I aim to better describe the homeostatic balance between damage and repair mechanisms in insects under extreme temperature events linked to climate change.
         </p>
     </div>
 
+    <!-- ========================= -->
+    <!-- ABOUT ME (DEMOTED) -->
+    <!-- ========================= -->
+    <h2>Researcher Profile</h2>
+    <div class="card">
+        <p>
+            I am a PhD Zoology candidate with a background in insect eco-physiology, experimental design, and statistical analysis in R.
+        </p>
+
+        <p>
+            My work spans applied pest management and fundamental thermal biology, with experience in insect rearing, physiological assays, and science communication.
+        </p>
+    </div>
+
+    <!-- ========================= -->
+    <!-- PUBLICATIONS -->
+    <!-- ========================= -->
     <h2>Publications</h2>
     <div class="card">
         <ul>
             <li>
-                <strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2025).
-                Effects of semiochemical pre-feeding, physiological state, and weather on the response of <em>Bactrocera dorsalis</em> to methyl eugenol baited traps.
-                <em>Crop Protection</em>, 107015.
-                <br>
-                <a href="https://doi.org/10.1016/j.cropro.2024.107015" target="_blank">DOI</a>
+                <strong>Pogue, T.</strong> et al. (2025). Crop Protection.
+                <br><a href="https://doi.org/10.1016/j.cropro.2024.107015" target="_blank">DOI</a>
             </li>
 
             <li>
-                <strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2024).
-                Effects of physiological status and environmental factors on lure responses of three fruit fly species.
-                <em>Journal of Chemical Ecology</em>, 1–22.
-                <br>
-                <a href="https://doi.org/10.1007/s10886-024-01516-8" target="_blank">DOI</a>
+                <strong>Pogue, T.</strong> et al. (2024). Journal of Chemical Ecology.
+                <br><a href="https://doi.org/10.1007/s10886-024-01516-8" target="_blank">DOI</a>
             </li>
 
             <li>
-                <strong>Pogue, T.</strong>, Malod, K., & Weldon, C. W. (2022).
-                Patterns of remating behaviour in <em>Ceratitis</em> species.
-                <em>Frontiers in Physiology</em>, 824768.
-                <br>
-                <a href="https://doi.org/10.3389/fphys.2022.824768" target="_blank">DOI</a>
+                <strong>Pogue, T.</strong> et al. (2022). Frontiers in Physiology.
+                <br><a href="https://doi.org/10.3389/fphys.2022.824768" target="_blank">DOI</a>
             </li>
         </ul>
     </div>
 
+    <!-- ========================= -->
+    <!-- CONTACT -->
+    <!-- ========================= -->
     <h2>Contact</h2>
-    <div class="card contact">
+    <div class="card">
         <p><strong>Email:</strong> <a href="mailto:tpogue@sun.ac.za">tpogue@sun.ac.za</a></p>
         <p><strong>Alternate:</strong> <a href="mailto:tania.pogue@gmail.com">tania.pogue@gmail.com</a></p>
         <p><strong>Institution:</strong> Stellenbosch University</p>
         <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7645-7109">0000-0002-7645-7109</a></p>
-        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=2Ti5-OoAAAAJ&hl=en&oi=sra" target="_blank">View profile</a></p>
+        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=2Ti5-OoAAAAJ&hl=en&oi=sra" target="_blank">Profile</a></p>
         <p><strong>Lab:</strong> <a href="https://climelab.net/" target="_blank">CLIME Lab</a></p>
     </div>
 
