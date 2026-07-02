@@ -3,283 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tania Pogue</title>
-
 <style>
-    body {
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        max-width: 850px;
-        margin: auto;
-        padding: 0;
-        line-height: 1.6;
-        color: #222;
-        background: #fafafa;
-    }
-
-    .banner {
-        background: linear-gradient(90deg, #2f3b52, #3f6aa8);
-        color: white;
-        padding: 25px 20px;
-    }
-
-    .banner-content {
-        max-width: 850px;
-        margin: auto;
-    }
-
-    h1 {
-        margin: 0;
-        font-size: 2.3em;
-    }
-
-    .tagline {
-        margin-top: 5px;
-        font-size: 1.05em;
-        opacity: 0.9;
-        font-weight: 300;
-    }
-
-    .container {
-        padding: 30px 20px;
-    }
-
-    h2 {
-        margin-top: 35px;
-        color: #2f3b52;
-        border-bottom: 1px solid #e6e6e6;
-        padding-bottom: 5px;
-    }
-
-    .card {
-        background: white;
-        padding: 18px 20px;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        margin-top: 10px;
-    }
-
-    .highlight-card {
-        background: #eef4ff;
-        border-left: 5px solid #3f6aa8;
-    }
-
-    img {
-        width: 180px;
-        border-radius: 12px;
-        margin-top: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    .figure {
-        text-align: center;
-    }
-
-    .figure img {
-        width: 100%;
-        max-width: 500px;
-        margin-top: 10px;
-    }
-
-    .caption {
-        font-size: 0.9em;
-        color: #666;
-        margin-top: 8px;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 10px;
-    }
-
-    a {
-        color: #2b6cb0;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .small-note {
-        font-size: 0.95em;
-        color: #555;
-    }
-
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:950px;margin:auto;background:#f7f8fa;color:#222;line-height:1.6;padding:0}
+.banner{background:linear-gradient(90deg,#2f3b52,#3f6aa8);color:#fff;padding:28px}
+.hero{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.hero img{width:180px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.container{padding:28px}
+.card{background:#fff;padding:18px 22px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);margin:12px 0}
+.highlight{background:#eef4ff;border-left:5px solid #3f6aa8}
+h2{color:#2f3b52;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:34px}
+a.button{display:inline-block;background:#3f6aa8;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;margin:6px 8px 6px 0}
+a{color:#2b6cb0}
+.figure img,.poster img,.conference img{width:100%;max-width:700px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.caption{font-size:.9em;color:#666}
+.conference{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.conference img{max-width:240px}
+footer{text-align:center;color:#666;padding:30px 10px;font-size:.9em}
+iframe{width:100%;height:800px;border:1px solid #ddd;border-radius:8px}
 </style>
 </head>
-
 <body>
-
-<!-- TOP BANNER -->
 <div class="banner">
-    <div class="banner-content">
-        <h1>Tania Pogue</h1>
-        <div class="tagline">
-            Entomology • Eco-physiology • Thermal ecology
-        </div>
-    </div>
+<div class="hero">
+<img src="Personal Lab Picturev2.jpg" alt="Tania Pogue">
+<div>
+<h1>Tania Pogue</h1>
+<p><strong>PhD Zoology Candidate</strong> • Stellenbosch University</p>
+<p><em>Entomology • Eco-physiology • Thermal Ecology</em></p>
 </div>
-
+</div>
+</div>
 <div class="container">
 
-    <p><strong>PhD Zoology Candidate</strong> – Stellenbosch University, South Africa</p>
-
-    <img src="yourphoto.jpg" alt="Tania Pogue">
-
-    <!-- ========================= -->
-    <!-- POSTER SUMMARY (NEW TOP PRIORITY SECTION) -->
-    <!-- ========================= -->
-    <h2>SEB Poster - Research Overview</h2>
-    <div class="card highlight-card">
-        <p>
-            This research investigates how temperature shapes the performance, physiology, and invasion success of the harlequin ladybeetle 
-            (<em>Harmonia axyridis</em>) by integrating laboratory thermal performance experiments with fine-scale environmental microclimate data.
-        </p>
-
-        <p class="small-note">
-            The aim is to link organismal thermal physiology with real-world environmental conditions to improve predictions of species responses to climate variability and extreme heat events.
-        </p>
-    </div>
-
-    <!-- ========================= -->
-    <!-- KEY FINDINGS (NEW CRITICAL SECTION) -->
-    <!-- ========================= -->
-    <h2>Key Findings</h2>
-    <div class="card">
-        <ul>
-            <li>Thermal performance differs substantially across traits (e.g. locomotion vs reproduction).</li>
-            <li>Metabolic rate shows a narrower thermal tolerance than behavioural performance.</li>
-            <li>Exposure to high temperatures reduces reproductive output and physiological performance.</li>
-            <li>Realised performance predictions differ between traits</li>
-            <li>Microclimate variation strongly alters predicted realised performance in natural conditions.</li>
-        </ul>
-    </div>
-
-    <!-- ========================= -->
-    <!-- POSTER / DATA ACCESS -->
-    <!-- ========================= -->
-    <h2>Poster & Research Resources</h2>
-    <div class="card">
-        <ul>
-            <li><a href="YOUR_POSTER_PDF_LINK" target="_blank">Download conference poster (PDF)</a></li>
-            <li><a href="https://github.com/t-pogue" target="_blank">GitHub: code & analysis pipeline</a></li>
-        </ul>
-
-        <p class="small-note">
-            Note: Code & analysis pipeline will only become available after this work has been published.
-        </p>
-    </div>
-
-    <!-- ========================= -->
-    <!-- CURRENT RESEARCH -->
-    <!-- ========================= -->
-    <h2>Current Research</h2>
-    <div class="card">
-        <p>
-            My research focuses on how temperature shapes the performance and persistence of the invasive harlequin ladybeetle 
-            (<em>Harmonia axyridis</em>). I combine laboratory experiments with long-term field microclimate data collected around Stellenbosch,
-            South Africa, to understand how insects experience thermal environments in nature.
-        </p>
-
-        <p>
-            A key component of this work is comparing thermal performance across multiple traits and integrating laboratory-derived thermal performance curves with fine-scale microclimate data to estimate realised performance under heterogenous natural conditions.
-        </p>
-
-        <p>
-            I also investigate physiological responses to thermal extremes, including damage accumulation, repair processes, and antioxidant protection during simulated heatwaves.
-        </p>
-
-        <div class="figure">
-            <img src="tpc_preview.png" alt="Thermal Performance Curve Preview">
-            <div class="caption">
-                Fig 1. Thermal performance curves for H. axyridis. Shaded regions
-                indicate thermal breadth (≥80% of maximum performance).
-                Curves represent the best-supported model fit based on lowest
-                AIC scores from data collected across 5–48°C (n = 15 per
-                temperature), with key thermal parameters indicated for each trait.
-            </div>
-        </div>
-
-                <div class="figure">
-            <img src="violin_plot_realised_performance_scaled_mr_walk_microsite_19_06.png" alt="Realised performance Preview">
-            <div class="caption">
-                Fig 2. Mean scaled realised performance of metabolic rate and walking speed
-                across microclimates used by H. axyridis in Stellenbosch, South Africa during
-                summer.
-            </div>
-        </div>
-    </div>
-
-    <!-- ========================= -->
-    <!-- FUTURE RESEARCH -->
-    <!-- ========================= -->
-    <h2>Future Research</h2>
-    <div class="card">
-        <p>
-            I aim to develop integrated thermal ecology models that combine laboratory physiology with fine-scale environmental heterogeneity 
-            to improve predictions of species responses to climate change.
-
-            I further aim to improve the knowledge of the physiological response of insects to extreme heat events, such as heatwaves, to better
-            predict insect responses to increased climate variability and climate change.
-        </p>
-    </div>
-
-    <!-- ========================= -->
-    <!-- ABOUT ME (DEMOTED) -->
-    <!-- ========================= -->
-    <h2>Researcher Profile</h2>
-    <div class="card">
-        <p>
-            I am a PhD Zoology candidate with a background in insect eco-physiology, integrated pest management, experimental design, and statistical analysis in R.
-        </p>
-
-        <p>
-            My work spans applied pest management and fundamental thermal biology, with experience in insect rearing, physiological assays, and science communication.
-        </p>
-    </div>
-
-    <!-- ========================= -->
-    <!-- PUBLICATIONS -->
-    <!-- ========================= -->
-    <h2>Publications</h2>
-    <div class="card">
-        <ul>
-            <li>
-                <strong>Pogue, T.</strong> et al. (2025). Crop Protection.
-                <br><a href="https://doi.org/10.1016/j.cropro.2024.107015" target="_blank">DOI</a>
-            </li>
-
-            <li>
-                <strong>Pogue, T.</strong> et al. (2024). Journal of Chemical Ecology.
-                <br><a href="https://doi.org/10.1007/s10886-024-01516-8" target="_blank">DOI</a>
-            </li>
-
-            <li>
-                <strong>Pogue, T.</strong> et al. (2022). Frontiers in Physiology.
-                <br><a href="https://doi.org/10.3389/fphys.2022.824768" target="_blank">DOI</a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- ========================= -->
-    <!-- CONTACT -->
-    <!-- ========================= -->
-    <h2>Contact</h2>
-    <div class="card">
-        <p><strong>Email:</strong> <a href="mailto:tpogue@sun.ac.za">tpogue@sun.ac.za</a></p>
-        <p><strong>Alternate:</strong> <a href="mailto:tania.pogue@gmail.com">tania.pogue@gmail.com</a></p>
-        <p><strong>Institution:</strong> Stellenbosch University</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tania-pogue-06b272142/">Tania Pogue</a></p>
-        <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-7645-7109">0000-0002-7645-7109</a></p>
-        <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=2Ti5-OoAAAAJ&hl=en&oi=sra" target="_blank">Profile</a></p>
-        <p><strong>Lab:</strong> <a href="https://climelab.net/" target="_blank">CLIME Lab</a></p>
-    </div>
-
+<div class="card highlight">
+<h2>Welcome</h2>
+<p><strong>Thanks for scanning my poster!</strong> I'm delighted you stopped by. This page contains my SEB conference poster, research highlights, publications, and contact details. Please feel free to get in touch if you'd like to discuss the research or potential collaborations.</p>
 </div>
 
-</body>
-</html>
+<h2>SEB Poster – Research Overview</h2>
+<div class="card highlight">
+<p>This research investigates how trait choice and microclimate variation impacts the thermal sensitivity and realised performance of the Harlequin ladybeetle, <em>Harmonia axyridis</em>. This research integrates laboratory thermal performance experiments with fine-scale environmental microclimate data to make robust, precise predictions of organismal performance and persistence.</p>
+</div>
+
+<h2>Key Findings</h2>
+<div class="card">
+<ul>
+<li>Thermal sensitivity and realised performance differs among traits.</li>
+<li>Microclimate variation alters realised performance.</li>
+<li>Trait-specific TPCs may improve ecological predictions.</li>
+</ul>
+</div>
+
+<h2>Methods</h2>
+
+<div class="card">
+
+<p>
+This research combines controlled laboratory experiments with high-resolution environmental data to investigate how temperature and microclimate influences insect performance under  natural conditions.
+</p>
+
+<h3>Laboratory experiments</h3>
+
+<ul>
+    <li>Adult <em>Harmonia axyridis</em> were reared under controlled laboratory conditions.</li>
+    <li>Performance was measured across a broad thermal gradient (5–48&nbsp;°C).</li>
+    <li>Traits measured included:
+        <ul>
+            <li>Walking speed</li>
+            <li>Metabolic rate</li>
+            <li>Fecundity</li>
+            <li>Egg hatching success</li>
+        </ul>
+    </li>
+    <li>Thermal performance curves (TPCs) were fitted using multiple biologically relevant models, with the best-supported model selected using AIC.</li>
+</ul>
+
+<h3>Microclimate measurements</h3>
+
+<ul>
+    <li>Temperature loggers were deployed across multiple microhabitats around Stellenbosch, South Africa.</li>
+    <li>Temperatures were recorded at fine (15 minute) temporal resolution over a two-year period. However, the results for this SEB poster only uses the summer data - December to March. </li>
+    <li>These datasets were used to characterise the thermal environments experienced by free-living ladybeetles.</li>
+</ul>
+
+<h3>Data integration</h3>
+
+<ul>
+    <li>
+        Laboratory-derived thermal performance curves were integrated with fine-scale field microclimate data to estimate realised performance under natural thermal environments, following the framework proposed by Vasseur et al. (2014)
+        (<a href="https://doi.org/10.1098/rspb.2013.2612" target="_blank">DOI: 10.1098/rspb.2013.2612</a>).
+    </li>
+
+    <li>
+        This approach combines experimentally derived thermal performance with the probability distribution of temperatures experienced in the field, providing a more realistic estimate of organismal performance than approaches based solely on coarse climatic averages.
+    </li>
+</ul>
+
+</div>
+    
+<h2>Conference Poster</h2>
+<div class="card poster">
+<p>View the poster below or download the full-resolution PDF.</p>
+<a class="button" href="Final Poster.pdf" target="_blank">Download Poster (PDF)</a>
+<a class="button" href="https://github.com/t-pogue" target="_blank">GitHub</a>
+<img src="Final Poster.png" alt="Conference poster preview">
+<p class="caption">Poster preview.</p>
+<iframe src="poster.pdf"></iframe>
+</div>
+
+<h2>Next Conference: Join Us in South Africa!</h2>
+<div class="card conference">
+<img src="ice_20282_conference.jpg" alt="Future conference">
+<div>
+<p>If you enjoyed this work, consider attending the next <strong>International Congress of Entomology (ICE 2028)</strong>, which will be hosted in <strong>Cape Town, South Africa</strong>. It is an excellent opportunity to engage with researchers in ecology, evolution, physiology, and environmental science.</p>
+<p><a class="button" href="https://ice2028.com/" target="_blank">Visit ICE 2028 Website</a></p>
+</div>
+</div>
+
+<h2>Current Research</h2>
+<div class="card">
+<p>My PhD combines laboratory experiments with field microclimate measurements to understand how temperature influences insect performance under realistic environmental conditions. I investigate thermal performance across multiple traits and examine physiological responses to thermal extremes.</p>
+<div class="figure">
+<img src="tpc_combined_stack_no_topt_shorter_LABEL19_06.png" alt="TPC">
+<p class="caption">Figure 1. Thermal performance curves.Fig 1. Thermal performance curves for H. axyridis. Shaded regions indicate thermal breadth (≥80% of maximum performance). Curves represent data collected across 5–48°C, with key thermal parameters indicated for each trait.</p>
+</div>
+<div class="figure">
+<img src="violin_plot_realised_performance_scaled_mr_walk_microsite_raw_and_daily28_06.png" alt="Trait speciific realised performance">
+<p class="caption">Figure 2. Average scaled realised performance across field microclimates measured during summer.</p>
+</div>
+</div>
+
+<h2>Future Research</h2>
+<div class="card">
+<p>I aim to develop integrated thermal ecology models that combine laboratory physiology with fine-scale environmental heterogeneity to improve predictions of species responses to climate change and extreme weather events.</p>
+</div>
+
+<h2>Researcher Profile</h2>
+<div class="card">
+<p>I am a PhD Zoology candidate with expertise in insect eco-physiology, experimental design, physiological assays, insect rearing, science communication, and statistical modelling in R.</p>
+</div>
+
+<h2>Publications</h2>
+<div class="card">
+<ul>
+<li>Pogue, T. et al. (2025). <em>Crop Protection</em>. <a href="https://doi.org/10.1016/j.cropro.2024.107015" target="_blank">DOI</a></li>
+<li>Pogue, T. et al. (2024). <em>Journal of Chemical Ecology</em>. <a href="https://doi.org/10.1007/s10886-024-01516-8" target="_blank">DOI</a></li>
+<li>Pogue, T. et al. (2022). <em>Frontiers in Physiology</em>. <a href="https://doi.org/10.3389/fphys.2022.824768" target="_blank">DOI</a></li>
+</ul>
+</div>
+
+<h2>Acknowledgements</h2>
+<div class="card">
+<p>I gratefully acknowledge the Entomological Society of Southern Africa and the British Ecological Society for providing travel grants to support my attendance at the SEB Annual Conference and presentation of this research. I also thank Stellenbosch University, the Centre for Invasion Biology, the School for Climate Studies, the CLIME Lab, collaborators, and funding partners for supporting this work.</p>
+</div>
+
+<h2>Contact</h2>
+<div class="card">
+<p>Email: <a href="mailto:tpogue@sun.ac.za">tpogue@sun.ac.za</a></p>
+<p>ORCID: <a href="https://orcid.org/0000-0002-7645-7109">0000-0002-7645-7109</a></p>
+<p>Google Scholar: <a href="https://scholar.google.com/citations?user=2Ti5-OoAAAAJ&hl=en&oi=sra">Profile</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/tania-pogue-06b272142/">Tania Pogue</a></p>
+<p>CLIME Lab: <a href="https://climelab.net/">Website</a></p>
+</div>
+
+<footer>© 2026 Tania Pogue • Last updated July 2026</footer>
+</div>
+</body></html>
